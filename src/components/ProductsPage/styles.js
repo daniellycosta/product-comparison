@@ -13,6 +13,8 @@ export const Content = styled.div`
   justify-content: ${(props) => (props.noElements ? "center" : "flex-start")};
   align-items: center;
 
+  overflow: auto;
+
   h1 {
     color: var(--text-body);
     font-style: italic;
