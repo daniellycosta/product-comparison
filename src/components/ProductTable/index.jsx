@@ -34,6 +34,7 @@ export const ProductTable = () => {
             return (
               <TableColHeader key={i}>
                 <button
+                  data-test={`delete-element-${i}`}
                   className="deleteProduct"
                   onClick={() => deleteProduct(name)}
                 >

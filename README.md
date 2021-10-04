@@ -10,6 +10,7 @@ A software that allows users to select and compare products highlighting differe
 
 - [How to use](#how-to-use)
   - [Installing dependencies and starting](#install)
+  - [Testing](#testing)
 - [Technologies](#technologies)
 - [Author](#author)
 - [License](#license)
@@ -30,6 +31,20 @@ After installing the dependencies, run the command below to start the applicatio
 yarn start
 ```
 
+## [Testing](#testing)
+
+On this project, Cypress was used for testing.
+
+You should run the command down below to run it.
+
+```
+yarn run cypress
+```
+
+After running the script above, click on the `test.spec.js` to trigger the tests, as shown on the image below.
+
+![cypress](cypress.png)
+
 ## [Technologies used](#technologies)
 
 This app was made using:
@@ -37,6 +52,7 @@ This app was made using:
 - [React](https://reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://www.npmjs.com/package/axios)
+- [Cypress](https://www.cypress.io/)
 
 ## [Author](#author)
 

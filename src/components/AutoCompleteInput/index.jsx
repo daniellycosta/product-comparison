@@ -53,8 +53,15 @@ export const AutoCompleteInput = ({ options, onClickOption }) => {
   return (
     <Container>
       <InputContainer optionsOpen={showOptions}>
-        <input value={value} onChange={handleOnChange} />
-        <button onClick={handleClickShowAllOptions}>
+        <input
+          value={value}
+          onChange={handleOnChange}
+          data-test="autocomplete-input"
+        />
+        <button
+          onClick={handleClickShowAllOptions}
+          data-test="autocomplete-input-button"
+        >
           {showOptions ? (
             <img src={expandLessImg} />
           ) : (
@@ -66,17 +73,22 @@ export const AutoCompleteInput = ({ options, onClickOption }) => {
         {showOptions && (
           <Select>
             {filteredSugestions.length ? (
-              filteredSugestions.map((option) => (
+              filteredSugestions.map((option, i) => (
                 <li
                   key={option}
                   value={option}
                   onClick={() => handleClickOption(option)}
+                  data-test={`option-list-item-${i}`}
                 >
                   {option}
                 </li>
               ))
             ) : (
-              <li key={"notFound"} className="disabled">
+              <li
+                key={"notFound"}
+                className="disabled"
+                data-test="option-list-item-not-found"
+              >
                 Not Found
               </li>
             )}
