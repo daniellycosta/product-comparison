@@ -1,5 +1,7 @@
 # Product Comparison
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/01e162b0-dea1-4dc3-90ac-a55e840c2e5f/deploy-status)](https://app.netlify.com/sites/product-comparison/deploys)
+
 A software that allows users to select and compare products highlighting different properties
 
 ![sample](sample.GIF)
